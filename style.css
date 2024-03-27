@@ -51,3 +51,17 @@ header {
 .escola-titulo {
     padding: 24px 0;
 }
+
+.estudante-imagem {
+    width: 30%;
+}
+
+.estudante-icone {
+    width: 25px;
+    padding: 4px 8px;
+}
+
+.estudante-div {
+    text-align: center;
+    padding: 16px 0;
+}
