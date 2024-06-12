@@ -1,0 +1,43 @@
+.cabecalho {
+    background-color: var(--cor-principal);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho__menu{
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
+.cabecalho-imagem{
+    padding: 1em;
+}
+
+.container__imagem{
+    padding: 1em;
+    width: 40px;
+}
+
+.cabecalho-lista{
+    display: none;
+    background-color: var(--cor-fundo);
+    position: absolute;
+    top: 100%;
+    width: 50vm;
+}
+
+.container__botao:checked~.cabecalho-lista{
+    display: block;
+}
