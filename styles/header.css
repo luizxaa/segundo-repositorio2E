@@ -23,12 +23,11 @@
 
 .cabecalho-imagem{
     padding: 1em;
-    width: 20%; //tamanho da logo
 }
 
 .container__imagem{
     padding: 1em;
-    width: 40px;
+    width: 20%; //tamanho da logo
 }
 
 .cabecalho-lista{
