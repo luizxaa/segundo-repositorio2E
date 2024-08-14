@@ -23,6 +23,7 @@
 
 .cabecalho-imagem{
     padding: 1em;
+    width: 20%; //tamanho da logo
 }
 
 .container__imagem{
