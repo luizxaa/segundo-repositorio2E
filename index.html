@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+      
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styles/apresentacao.css">
 </head>
@@ -84,6 +84,38 @@
 
     </section>
 
+    <section class="carrossel">
+        
+        <h2 class="carrossel__titulo">Nossos Serviços</h2>
+
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="./img/abstract-95721_1280.jpg" alt="função seno"></div>
+                <div class="swiper-slide"><img src="./img/background-5270959_1920.jpg" alt="mesa de estudo"></div>
+                <div class="swiper-slide"><img src="./img/banner-1044110_1920.jpg" alt="formula de bhaskara"></div>
+                <div class="swiper-slide"><img src="./img/board-4727472_1280.jpg" alt="quadro com fórmulas"></div>
+                <div class="swiper-slide"><img src="./img/chart-2785864_1280.jpg" alt="relatorio"></div>
+                <div class="swiper-slide"><img src="./img/ecommerce-3562191_1920.jpg" alt="dispositivos móveis"></div>
+                <div class="swiper-slide"><img src="./img/halloween-background-5615520_1920.jpg" alt="halloween"></div>
+                
+            </div>
+
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+  
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+  
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </section>
+
+
     <section class="estudante">
         <h2 class="estudante-titulo">Quem sou</h2>
         <div class="estudante-div">
@@ -98,6 +130,8 @@
     <footer class="rodape">
         <img src="img/alurastart_logo.png" alt="logo da alura" class="rodape-imagem">
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 </body>
 
