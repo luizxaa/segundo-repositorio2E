@@ -101,6 +101,7 @@
     }
 
     .opcoes__item{
+        list-style-type: none;
         padding: 0 2em;
         text-transform: uppercase;
         color: var(--branco);
