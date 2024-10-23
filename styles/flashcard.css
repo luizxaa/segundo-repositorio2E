@@ -1,8 +1,5 @@
-.flashcard {
-    background-color: var(--cor-fundo);
-}
-
 #flashcard {
+    background-color: var(--cor-fundo);
     display: flex;
 }
 
