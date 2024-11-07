@@ -18,10 +18,10 @@
 .cartao__conteudo{
     text-align: center;
     height: 100%;
-    /*   
+  
     transform-style: preserve-3d;
     transition: transform 300ms ease-in-out;
-    */
+    
 }
 
 .cartao__conteudo h3 {
