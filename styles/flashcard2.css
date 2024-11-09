@@ -33,3 +33,13 @@
     margin-top: 1rem;
     padding: 2rem;
 }
+
+.cartao__conteudo__pergunta p {
+    color: var(--cor-principal);
+    font-weight: 500;
+}
+
+.cartao__conteudo__resposta p {
+    color: var(--cor-secundaria);
+    font-weight: 700;
+}
