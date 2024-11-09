@@ -48,7 +48,7 @@
 }
 
 .cartao:hover .cartao__conteudo {
-    transform: rotate(180deg);
+    transform: rotateY(180deg);
 }
 
 .cartao__conteudo__pergunta,
