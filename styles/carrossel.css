@@ -8,7 +8,17 @@
     padding: 1em 0 0.5em 0;
 }
 
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .swiper-slide img {
+    display: block;
     width: 100%;
     height: auto; /* Mantém a proporção da imagem */
     max-height: 400px; /* Ajuste conforme necessário */
