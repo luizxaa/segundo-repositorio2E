@@ -6,20 +6,21 @@
 
 .cartao {
     margin: 1rem 1rem;
-    background-color: aqua;
     height: 20rem;
     flex-grow: 1;
     flex-basis: calc(33% - 6rem);
 }
 
 .cartao__conteudo {
+    background-color: var(--cor-botao);
     text-align: center;
     height: 100%;
 }
 
 .cartao__conteudo h3 {
     background-color: var(--cor-principal);
-    align-content: center;
+    color: var(--cor-branco);
+    border: 1px solid var(--cor-branco);
     text-align: center;
     padding: 0.5rem;
     position: absolute;
