@@ -1,7 +1,10 @@
 #flashcard {
     background-color: bisque;
     display: flex;
-
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 4rem;
+    gap: 3rem;
 }
 
 .cartao {
@@ -35,7 +38,7 @@
 .cartao__conteudo p {
     margin-top: 1rem;
     padding: 2rem;
-    margin-top: 4;
+    margin-top: 5;
 }
 
 .cartao__conteudo__pergunta p {
