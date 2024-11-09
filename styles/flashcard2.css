@@ -32,12 +32,12 @@
     border: 1px solid var(--cor-branco);
     text-align: center;
     padding: 0.5rem;
-    position: absolute;
+    position: relative;
     margin: 0.6rem;
     border-radius: 0.6rem;
     font-size: 1vw;
     backface-visibility: hidden;
-    left: 40%;
+    
     
 }
 
