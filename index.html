@@ -157,8 +157,6 @@
                     <div class="swiper-slide"><img src="./img/ecommerce-3562191_1920.jpg" alt="dispositivos móveis"></div>
                     <div class="swiper-slide"><img src="./img/halloween-background-5615520_1920.jpg" alt="halloween"></div>
                     
-                    
-                    
                     <!-- If we need navigation buttons -->
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
@@ -222,17 +220,16 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper(".swiper", {
-                        
-            pagination: {
-                el: ".swiper-pagination",
-                type: "fraction",
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                nextEl: ".swiper-button-prev",
-            },
+          pagination: {
+            el: ".swiper-pagination",
+            type: "fraction",
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
         });
-    </script>
+      </script>
 
 </body>
 
