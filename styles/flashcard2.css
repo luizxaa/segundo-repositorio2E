@@ -16,3 +16,13 @@
     text-align: center;
     height: 100%;
 }
+
+.cartao__conteudo h3 {
+    background-color: var(--cor-principal);
+    text-align: center;
+    padding: 0.5rem;
+    position: absolute;
+    margin: 0.6rem;
+    border-radius: 0.6;
+    font-size: 1vw;
+}
