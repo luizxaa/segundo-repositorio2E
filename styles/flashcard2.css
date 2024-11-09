@@ -35,6 +35,7 @@
 .cartao__conteudo p {
     margin-top: 1rem;
     padding: 2rem;
+    margin-top: 4;
 }
 
 .cartao__conteudo__pergunta p {
@@ -54,4 +55,12 @@
 .cartao__conteudo__pergunta,
 .cartao__conteudo__resposta {
     backface-visibility: hidden;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.cartao__conteudo__resposta {
+    transform: rotateY(180deg);
+
 }
