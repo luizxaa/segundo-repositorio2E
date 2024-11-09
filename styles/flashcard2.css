@@ -31,6 +31,8 @@
     color: var(--cor-branco);
     border: 1px solid var(--cor-branco);
     text-align: center;
+    text-transform: uppercase;
+    font-size: 2.5vw;
     padding: 0.5rem;
     position: relative;
     margin: 0.6rem;
