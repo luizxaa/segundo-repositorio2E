@@ -9,7 +9,7 @@
 }
 
 .swiper-slide img {
-    width: 100%;
+    width: 90%;
     height: auto; /* Mantém a proporção da imagem */
     max-height: 400px; /* Ajuste conforme necessário */
     
