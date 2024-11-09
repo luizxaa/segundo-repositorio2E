@@ -34,8 +34,8 @@
     border-radius: 0.6rem;
     font-size: 1vw;
     backface-visibility: hidden;
-    left: 50%;
-    transform: translate(-40%, -50%);
+    left: 40%;
+    
 }
 
 .cartao__conteudo p {
