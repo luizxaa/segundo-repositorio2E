@@ -94,12 +94,12 @@
         font-size: 26px;
     }
 
-    .swiper-pagination {
-        margin: 1em 0;
+    .swiper {
+        width: 85%;
     }
 
-    .swiper {
-        width: 50%;
+    .swiper-pagination {
+        margin: 1em 0;
     }
 
     .swiper-button-prev,
@@ -121,7 +121,7 @@
     }
 
     .swiper {
-        width: 50%;
+        width: 75%;
     }
 
 }
