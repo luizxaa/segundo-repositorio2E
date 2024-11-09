@@ -30,6 +30,6 @@ function criaCartao (item, pergunta, resposta) {
 
     cartao.addEventListener('click', viraCartao);
 
-    flashcard.appendChield(cartao);
+    flashcard.appendChild(cartao);
 
 }
