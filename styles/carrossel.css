@@ -8,6 +8,10 @@
     padding: 1em 0 0.5em 0;
 }
 
+.swiper {
+    width: 80%;
+}
+
 .swiper-slide {
     text-align: center;
     font-size: 18px;
