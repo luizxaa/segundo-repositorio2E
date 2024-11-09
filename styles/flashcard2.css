@@ -21,6 +21,9 @@
     transform-style: preserve-3d;
     transition: transform 300ms ease-in-out;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .cartao__conteudo h3 {
