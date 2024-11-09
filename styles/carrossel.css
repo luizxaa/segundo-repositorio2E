@@ -18,10 +18,9 @@
 }
 
 .swiper-slide img {
-    display: block;
     width: 100%;
     height: auto; /* Mantém a proporção da imagem */
-    max-height: 450px;
+    max-height: 400px;
     object-fit: cover; /* Ajusta a imagem para preencher o contêiner */
 }
 
