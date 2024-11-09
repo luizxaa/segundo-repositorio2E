@@ -24,8 +24,8 @@ function criaCartao (item, pergunta, resposta) {
     let respostaEstaVisivel = false;
 
     function viraCartao () {
-        respostaEstaVisivel = !variavelEstaVisivel;
-        cartao.classList.toggle('active', viraCartao);
+        respostaEstaVisivel = !respostaEstaVisivel;
+        cartao.classList.toggle('active', respostaEstaVisivel);
     }
 
     cartao.addEventListener('click', viraCartao);
