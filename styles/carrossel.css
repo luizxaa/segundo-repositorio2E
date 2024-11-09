@@ -9,7 +9,7 @@
 }
 
 .swiper {
-    width: 50%;
+    width: 90%;
 }
 
 .swiper-slide {
@@ -27,8 +27,6 @@
     max-height: 400px;
     object-fit: cover; /* Ajusta a imagem para preencher o contêiner */
 }
-
-
 
 .swiper-pagination {
     position: initial;
@@ -107,7 +105,7 @@
     .swiper-button-prev,
     .swiper-button-next {
         display: block;
-        top: 60%;
+        top: 50%;
     }
 }
 
