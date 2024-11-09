@@ -28,10 +28,7 @@
     object-fit: cover; /* Ajusta a imagem para preencher o contêiner */
 }
 
-.swiper-button-prev,
-.swiper-button-next {
-    display: none;
-}
+
 
 .swiper-pagination {
     position: initial;
