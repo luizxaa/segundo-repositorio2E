@@ -14,7 +14,7 @@ function toggleFavorite(imgElement) {
             imgElement.src = url;
             
             // Aumenta a imagem em 5% 
-            imgElement.style.transform = imgElement.style.transform === 'scale(1.05)' ? 'scale(1)' : 'scale(1.05)'; 
+            imgElement.style.transform = imgElement.style.transform === 'scale(1.15)' ? 'scale(1)' : 'scale(1.15)'; 
     }); 
 } 
     
