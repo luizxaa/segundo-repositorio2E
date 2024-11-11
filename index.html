@@ -142,7 +142,7 @@
         <section class="carrossel">
             
             <h2 class="carrossel__titulo">Nossos Serviços</h2>
-            
+
             <div class="carrossel__container">
                 <!-- Slider main container -->
                 <div class="swiper">
@@ -185,7 +185,9 @@
                     <div class="card__botoes">
                         <ul class="botoes">
                             <li class="botoes__item">
-                                <img src="./img/favoritos.svg" alt="Favoritar produto">
+                                <!-- 
+                                <img src="./img/favoritos.svg" alt="Favoritar produto">  -->
+                                <object id="favorito" type="image/svg+xml" data="img/favoritos.svg" width="100" height="100"></object>
                             </li>
                             <li class="botoes__item"> 
                                 <img src="./img/compras.svg" alt="Adicionar no carrinho de compras">
@@ -232,6 +234,17 @@
           },
         });
       </script>
+
+    <script>
+        document.getElementById('favorito').addEventListener('load', function() {
+            var svgDoc = this.contentDocument;
+            var svgElement = svgDoc.querySelector('svg');
+            svgElement.addEventListener('click', function() {
+                var currentColor = this.getAttribute('fill');
+                this.setAttribute('fill', currentColor === 'white' ? 'red' : 'white');
+            }); 
+        });
+    </script>
 
 </body>
 
