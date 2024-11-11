@@ -13,6 +13,9 @@ document.getElementById('favorito').addEventListener('click', function() {
             const serializedSvg = new XMLSerializer().serializeToString(svgElement.ownerDocument.documentElement);
             const svgBlob = new Blob([serializedSvg], { type: 'image/svg+xml' });
             const url = URL.createObjectURL(svgBlob);
-            imgElement.src = url; 
+            imgElement.src = url;
+
+            // Aumenta a imagem em 5% 
+            imgElement.style.transform = imgElement.style.transform === 'scale(1.05)' ? 'scale(1)' : 'scale(1.05)';
         }); 
 }); 

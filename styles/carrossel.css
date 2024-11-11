@@ -60,7 +60,8 @@
 
 
 .botoes__item img { 
-    cursor: pointer; 
+    cursor: pointer;
+    transition: transform 0.3s;
 }
 
 .botoes {
