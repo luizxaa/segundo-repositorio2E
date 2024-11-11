@@ -7,7 +7,7 @@ document.getElementById('favorito').addEventListener('click', function() {
         .then(data => { 
             const parser = new DOMParser();
             const svgDoc = parser.parseFromString(data, "image/svg+xml"); 
-            const svgElement = svgDoc.querySelector('svg'); 
+            const svgElement = svgDoc.querySelector('path'); 
             const currentColor = svgElement.getAttribute('fill'); svgElement.setAttribute('fill', currentColor === 'white' ? 'red' : 'white'); 
             const serializedSvg = new XMLSerializer().serializeToString(svgElement); 
             const svgBlob = new Blob([serializedSvg], { type: 'image/svg+xml' }); 
