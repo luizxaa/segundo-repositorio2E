@@ -235,15 +235,22 @@
         });
       </script>
 
+    
     <script>
-        document.getElementById('favorito').addEventListener('load', function() {
-            var svgDoc = this.contentDocument;
-            var svgElement = svgDoc.querySelector('svg');
-            svgElement.addEventListener('click', function() {
-                var currentColor = this.getAttribute('fill');
-                this.setAttribute('fill', currentColor === 'white' ? 'red' : 'white');
-            }); 
-        });
+        document.getElementById('favorito').addEventListener('click', function() {
+            const imgElement = this; 
+            fetch(imgElement.src) 
+                .then(response => response.text()) 
+                .then(data => { 
+                    const parser = new DOMParser();
+                    const svgDoc = parser.parseFromString(data, "image/svg+xml"); 
+                    const svgElement = svgDoc.querySelector('svg'); 
+                    const currentColor = svgElement.getAttribute('fill'); svgElement.setAttribute('fill', currentColor === 'grey' ? 'red' : 'grey'); 
+                    const serializedSvg = new XMLSerializer().serializeToString(svgElement); 
+                    const svgBlob = new Blob([serializedSvg], { type: 'image/svg+xml' }); 
+                    const url = URL.createObjectURL(svgBlob); imgElement.src = url; 
+                }); 
+        }); 
     </script>
 
 </body>
