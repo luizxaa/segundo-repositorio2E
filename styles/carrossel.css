@@ -1,3 +1,7 @@
+.carrossel__container {
+    margin-top: 3em;
+}
+
 .carrossel__titulo {
     color: var(--cor-principal);
     background-color: var(--cor-secundaria);
@@ -117,7 +121,7 @@
 @media screen and (min-width: 1728px) {
     .carrossel__container {
         display: flex;
-        margin: 0 20vw 3em 20vw;
+        margin: 3em 20vw 3em 20vw;
         align-items: center;
     }
 
