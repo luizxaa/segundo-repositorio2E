@@ -1,6 +1,6 @@
 .carrossel__container {
     margin: 2em auto;
-    
+
 }
 
 .carrossel__titulo {
@@ -55,6 +55,12 @@
 .card__botoes {
     display: flex;
     justify-content: space-between;
+    position: relative;
+}
+
+
+.botoes__item img { 
+    cursor: pointer; 
 }
 
 .botoes {
