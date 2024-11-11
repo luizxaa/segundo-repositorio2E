@@ -6,11 +6,13 @@ document.getElementById('favorito').addEventListener('click', function() {
         .then(response => response.text()) 
         .then(data => { 
             const parser = new DOMParser();
-            const svgDoc = parser.parseFromString(data, "image/svg+xml"); 
-            const svgElement = svgDoc.querySelector('path'); 
-            const currentColor = svgElement.getAttribute('fill'); svgElement.setAttribute('fill', currentColor === 'white' ? 'red' : 'white'); 
-            const serializedSvg = new XMLSerializer().serializeToString(svgElement); 
-            const svgBlob = new Blob([serializedSvg], { type: 'image/svg+xml' }); 
-            const url = URL.createObjectURL(svgBlob); imgElement.src = url; 
+            const svgDoc = parser.parseFromString(data, "image/svg+xml");
+            const svgElement = svgDoc.querySelector('path'); // Alterado para selecionar o elemento <path>
+            const currentColor = svgElement.getAttribute('fill');
+            svgElement.setAttribute('fill', currentColor === 'white' ? 'red' : 'white'); // Alterado para 'white' 
+            const serializedSvg = new XMLSerializer().serializeToString(svgElement.ownerDocument.documentElement);
+            const svgBlob = new Blob([serializedSvg], { type: 'image/svg+xml' });
+            const url = URL.createObjectURL(svgBlob);
+            imgElement.src = url; 
         }); 
 }); 
